@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Animation Viewer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+    <div class="stage">
+      <video id="player-a" class="layer" muted playsinline></video>
+      <video id="player-b" class="layer" muted playsinline></video>
+    </div>
+    <p class="hint">Press number 1-5 at keyboard to interact with Uni</p>
+  </main>
+
+  <div class="call-status">
+    Connecting<span class="dots"><span></span><span></span><span></span></span>
+  </div>
+
+  <div id="preload-pool" class="preload-pool" aria-hidden="true"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
